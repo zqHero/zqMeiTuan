@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="status_bar_color">#00f</color>
+    <color name="tran">#00000000</color>
+
+
+</resources>

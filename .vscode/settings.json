@@ -1,0 +1,26 @@
+{
+    // "typescript.referencesCodeLens.enabled": true,
+    "tslint.autoFixOnSave": true,
+    "tslint.jsEnable": true,
+    "tslint.exclude": [
+        "**/*.js",
+        "**/*.jsx"
+    ],
+    // 控制键入时是否应自动显示建议
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    // 启用/禁用在 TypeScript 文件中引用 CodeLens。要求 TypeScript >= 2.0.6。
+    "typescript.referencesCodeLens.enabled": true,
+    // Always show rule failures as warnings, independent of the tslint configuration.
+    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    // Always show the TSlint status bar item, not only when there are errors or warnings.
+    "tslint.alwaysShowStatus": true,
+    // 完成函数的参数签名。
+    "typescript.useCodeSnippetsOnMethodSuggest": true,
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "prettier.printWidth": 120,
+    "editor.formatOnSave": true,
+}
