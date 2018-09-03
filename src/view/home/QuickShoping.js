@@ -10,14 +10,14 @@
 import React, { Component } from 'react';
 import { View, Image, ScrollView } from 'react-native'
 
-import TabBarItem from '../common/TabBarItem'
+import TabItemView from '../common/TabItemView'
 export default class QuickShoping extends Component {
 
     static navigationOptions = ({ navigation, screenProps }) => ({
         tabBarLabel: '闪购',
         header: null,
         tabBarIcon: ({ focused, tintColor }) => (
-            <TabBarItem
+            <TabItemView
                 focused={focused}
                 tintColor={tintColor}
                 normalImage={require('../../assets/home_tabbar/tabbar_discover.png')}

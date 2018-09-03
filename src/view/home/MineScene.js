@@ -8,14 +8,13 @@
 import React, { Component } from 'react';
 import { View, Image, ScrollView, StatusBar, FlatList, Text, Dimensions, TouchableHighlight } from 'react-native'
 
-import TabBarItem from '../common/TabBarItem'
+import TabItemView from '../common/TabItemView'
 import TextNavigatorItem from '../common/TextNavigatorItem'
 import RoundAvatar from '../common/RoundAvatar'
 
 import HomeMineModel from '../../model/home/home_mine/HomeMineModel'
 
 let screenWidth = Dimensions.get('window').width
-
 
 export default class MineScene extends Component {
 
@@ -27,7 +26,7 @@ export default class MineScene extends Component {
         tabBarLabel: '我的',
         header: null,
         tabBarIcon: ({ focused, tintColor }) => (
-            <TabBarItem
+            <TabItemView
                 focused={focused}
                 tintColor={tintColor}
                 normalImage={require('../../assets/home_tabbar/tabbar_mine.png')}
@@ -217,7 +216,7 @@ export default class MineScene extends Component {
             }}
             underlayColor='#fff'
         >
-            <TabBarItem
+            <TabItemView
                 normalImage={item.img}
                 showText={item.text}
                 showLabel={item.label}

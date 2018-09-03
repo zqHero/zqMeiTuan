@@ -5,12 +5,12 @@
  * @csdn: https://blog.csdn.net/u013233097
  * @github: https://github.com/zqHero
  */
-
-
 import React, { Component } from 'react';
-import { View, Image, ScrollView, StatusBar } from 'react-native'
+import { View, Text, Image, ScrollView, StatusBar, ViewPagerAndroid } from 'react-native'
+import TabItemView from '../common/TabItemView'
 
-import TabBarItem from '../common/TabBarItem'
+import TabContentView from './home_orderForm/TabContentView'
+
 
 export default class MainScene extends Component {
 
@@ -18,7 +18,7 @@ export default class MainScene extends Component {
         tabBarLabel: '首页',
         header: null,
         tabBarIcon: ({ focused, tintColor }) => (
-            <TabBarItem
+            <TabItemView
                 focused={focused}
                 tintColor={tintColor}
                 normalImage={require('../../assets/home_tabbar/tabbar_homepage.png')}
@@ -27,11 +27,15 @@ export default class MainScene extends Component {
         ),
     })
 
+    componentDidMount() {
+
+    }
+
     render() {
         return (
-            <ScrollView style={{ flex: 1, flexDirection: 'column', backgroundColor: '#EFEFEF' }}>
-                <View style={{ height: 150, flexDirection: 'column', backgroundColor: '#f00' }}>
-
+            <ScrollView style={{ backgroundColor: 'blue', display: 'flex' }}>
+                <View style={{ backgroundColor: 'green' }}>
+                    <Text>{'adsadsdsad'}</Text>
                 </View>
             </ScrollView>
         )

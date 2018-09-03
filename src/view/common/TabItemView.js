@@ -21,7 +21,7 @@ type Props = {
 /**
  * 首页可以有焦点的  tabbaritem的  iamge组件
  */
-export default class TabBarItem extends Component<Props> {
+export default class TabItemView extends Component<Props> {
 
     render() {
         const selctedImg = this.props.selectedImage ? this.props.selectedImage : this.props.normalImage
